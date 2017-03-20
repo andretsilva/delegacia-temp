@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+body, html, .body {
+    height:100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:#fafafa;
+    font-family: 'Roboto';
+    font-size:16px;
+}
+
+.site-head {
+    background:#3f51b5;
+    color:#fff;
+    padding:20px;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2;
+}
+
+.site-head:after {
+    display:block;
+    width:100%;
+    clear:both;
+}
+
+.site-title {
+    text-transform: uppercase;
+    padding:0;
+    margin:0;
+    clear:none;
+    display: inline-block;
+    font-size:0.9em;
+}
+
+
+.btn-menu {
+    display: inline-block;
+    cursor:pointer;
+    float:left;
+    margin-right:15px;
+
+}
+.btn-menu .bar-menu {
+    background:#fff;
+    width:20px;
+    height:3px;
+    display: block;
+    border-radius:10px;
+    margin:3px 10px;
+
+}
+.part-left {
+    width:15%;
+    background:#fff;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    height:100%;
+    padding-top:100px;
+    position:absolute;
+    left:0;
+    z-index:0;
+}
+
+.menu-left .menu-list {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.menu-left .menu-item {
+    padding:20px;
+    font-size:0.8em;
+    font-weight:300;
+}
+
+.icon-menu {
+    display: inline-block;
+    width:40px;
+    text-align: center;
+}
+
+.container-full {
+    width:85%;
+    margin-left:15%;
+    padding: 80px  10px 0 10px;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between   ;
+}
+
+.btn-top {
+    width:24%;
+    float:left;
+    background:#009688;
+    border-radius:2px;
+    height:77px;
+    color:#fff;
+    font-weight: 300;
+    padding:15px;
+}
+.btn-top p {
+    margin:0;
+    padding:0;
+}
+.btn-top .num-ocorrencias {
+    font-size:2em;
+    line-height:0.7em;
+}
+
+.graphs {
+    height:540px;
+    width:100%;
+}
+.graph-box {
+    padding:20px;
+    box-shadow:0 2px 2px rgba(0,0,0,0.2);
+    border-radius:5px;
+    margin:20px 0 ;
+}
+
+.btn-top.btn-roubos {
+    background:#9c27b0;
+}
+
+.btn-veiculos {
+    background:#f44336;
+}
+
+.btn-armas {
+    background:#3f51b5;
+}
+.table {
+    width:100%;
+}
+.table .bar {
+    background:#c5cae9;
+    position: relative;
+    height:5px;
+    width:100%;
+}
+.bar-fill {
+    background:#3949ab;
+    height:5px;
+}
+.bar-fill-1 {
+    width:26%;
+    float:left;
+}
+.bar-fill-2 {
+    width:20%;
+    float:left;
+}
+.bar-fill-3 {
+    width:15%;
+    float:left;
+}
+.bar-fill-4 {
+    width:30%;
+    float:left;
+}
+.bar-fill-5 {
+    width:18%;
+    float:left;
+}
+
+.table {
+    text-align: left;
+}
+.table th {
+    text-align: left;
+    font-weight: 300;
+    border-bottom:2px solid #ddd;
+    padding:10px 5px;
+}
+
+.table td {
+    padding:10px 5px;
+    font-weight: 300;
+}
+
+
+.first-col {
+    width:20%;
+}
+.second-col {
+    width:20%;
+}

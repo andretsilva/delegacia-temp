@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+
+        <header class="site-head">
+            <div class="btn-menu">
+                <span class="bar-menu"></span>
+                <span class="bar-menu"></span>
+                <span class="bar-menu"></span>
+            </div>
+            <h1 class="site-title">Sistema de Ocorrências políciais </h1>
+            <nav class="buttons-left">
+
+            </nav>
+        </header>
+        <main class="body">
+            <aside class="part-left">
+                <nav class="menu-left">
+                    <ul class="menu-list">
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-logo.jpg" alt=""></span> Home</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-police.jpg" alt=""></span> Ocorrências</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-relatorios.jpg" alt=""></span> Estatísticas</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-delegacias.jpg" alt=""></span> Delegacias</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-usuarios.jpg" alt=""></span> Usuários</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-configuracoes.jpg" alt=""></span> Configurações</li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="container-full">
+                <section class="top-bar">
+                    <div class="btn-top">
+                        <p><span class="num-ocorrencias ">60</span><br>Ocorrências Políciais</p>
+                    </div>
+                    <div class="btn-top btn-roubos">
+                        <p><span class="num-ocorrencias ">23</span><br>Roubos e Furtos</p>
+                    </div>
+                    <div class="btn-top btn-armas">
+                        <p><span class="num-ocorrencias ">13</span><br>Armas Apreendidas</p>
+                    </div>
+                    <div class="btn-top btn-veiculos">
+                        <p><span class="num-ocorrencias ">17</span><br>Veículos Recuperados</p>
+                    </div>
+                </section>
+                <section class="graph1 graph-box">
+                    <p>Ocorrências: <span class="num-ocorrencias">445</span></p>
+                    <div class="graphs">
+                        <canvas id="graph-lines">
+
+                        </canvas>
+                    </div>
+                </section>
+                <section class="graph2 graph-box">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="first-col">Ocorrências</th>
+                                <th class="second-col">Quantidade</th>
+                                <th class="third-col">%</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Apreensão de Drogas</td>
+                            <td>26</td>
+                            <td>
+                                <div class="bar"><div class="bar-fill bar-fill-1"></div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Flagrantes</td>
+                            <td>20</td>
+                            <td>
+                                <div class="bar"><div class="bar-fill bar-fill-2"></div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Furto</td>
+                            <td>15</td>
+                            <td>
+                                <div class="bar"><div class="bar-fill bar-fill-3"></div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Roubo</td>
+                            <td>30</td>
+                            <td>
+                                <div class="bar"><div class="bar-fill bar-fill-4"></div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Veículos</td>
+                            <td>18</td>
+                            <td>
+                                <div class="bar"><div class="bar-fill bar-fill-5"></div></div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/Chart.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            ctx = $("#graph-lines");
+            var scatterChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Veículos Recuperados',
+                        borderColor:'#ff0000',
+                        fill:false,
+                        data: [{
+                            x: 10,
+                            y: 33
+                        }, {
+                            x: 20,
+                            y: 14
+                        }, {
+                            x: 30,
+                            y: 28
+                        }]
+                        },
+                        {
+                            label: 'Roubos e Furtos',
+                            borderColor:'#00ff00',
+                            fill:false,
+                            data: [{
+                                x: 10,
+                                y: 14
+                            }, {
+                                x: 20,
+                                y: 20
+                            }, {
+                                x: 30,
+                                y: 25
+                            }]
+                        },
+                        {
+                            label: 'Armas apreendidas',
+                            borderColor:'#0000FF',
+                            fill:false,
+                            data: [{
+                                x: 10,
+                                y: 25
+                            }, {
+                                x: 20,
+                                y: 35
+                            }, {
+                                x: 30,
+                                y: 30
+                            }]
+
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        xAxes: [{
+                            type: 'linear',
+                            position: 'bottom'
+                        }]
+                    }
+                }
+            })
+        });
+    </script>
+
+    </body>
+</html>
