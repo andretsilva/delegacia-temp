@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    </head>
+    <body>
+
+
+        <header class="site-head">
+            <div class="btn-menu">
+                <span class="bar-menu"></span>
+                <span class="bar-menu"></span>
+                <span class="bar-menu"></span>
+            </div>
+            <h1 class="site-title">Sistema de Ocorrências políciais </h1>
+            <nav class="buttons-left">
+
+            </nav>
+        </header>
+        <main class="body">
+            <aside class="part-left">
+                <nav class="menu-left">
+                    <ul class="menu-list">
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-logo.jpg" alt=""></span> <a href="index.html">Home</a></li>
+                        <li class="menu-item menu-toggle"><span class="icon-menu"><img src="img/icon-police.jpg" alt=""></span> Ocorrências
+                            <ul class="submenu">
+                                <li class="menu-item">
+                                    <a href="cadastro-ocorrencias.html" class="menu-link">Cadastrar Ocorrências</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="relatorio-fechamento.html" class="menu-link">Relatório de Fechamento</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="relatorio-ocorrencias.html" class="menu-link">Relatório de Ocorrências</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-relatorios.jpg" alt=""></span> Estatísticas</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-delegacias.jpg" alt=""></span> Delegacias</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-usuarios.jpg" alt=""></span> Usuários</li>
+                        <li class="menu-item"><span class="icon-menu"><img src="img/icon-configuracoes.jpg" alt=""></span> Configurações</li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="container-full">
+                <form action="#" method="post">
+                    <section class="cadastro-ocorrencias">
+                        <h2><img src="img/icon-police.jpg" alt=""> Cadastrar Ocorrências</h2>
+                        <div class="row">
+                            <div class="col-md-2 dt-div">
+                                <label for="data-ocorrencia">Data das Ocorrências</label>
+                                <input type="date" name="data-ocorrencia" id="data-ocorrencia" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label for="homicidios-dolosos">Homicídios Dolosos</label>
+                                <input type="number" name="homicidios-dolosos" value="0" class="form-control" id="homicidios-dolosos">
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label for="latrocinios">Latrocínios</label>
+                                <input type="number" name="latrocinios" value="0" class="form-control" id="latrocinios">
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label for="extorsao-sequestro">Extorsão Mediante Sequestro</label>
+                                <input type="number" name="extorsao-sequestro" value="0" class="form-control" id="extorsao-sequestro">
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label for="trafico-entorpecentes">Trafico de Entorpecentes</label>
+                                <input type="number" name="trafico-entorpecentes" value="0" class="form-control" id="trafico-entorpecentes">
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label for="estupro">Estupro</label>
+                                <input type="number" name="estupro" value="0" class="form-control" id="estupro">
+                            </div>
+                            <div class="col-md-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3>Furtos</h3>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="furtos-automoveis">Automóveis</label>
+                                        <input type="number" name="furtos-automoveis" value="0" class="form-control" id="furtos-automoveis">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="furtos-caminhoes">Caminhões</label>
+                                        <input type="number" name="furtos-caminhoes" value="0" class="form-control" id="furtos-caminhoes">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="furtos-caminhonetas">Caminhonetas</label>
+                                        <input type="number" name="furtos-caminhonetas" value="0" class="form-control" id="furtos-caminhonetas">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="furtos-motocicletas">Motocicletas</label>
+                                        <input type="number" name="furtos-motocicletas" value="0" class="form-control" id="furtos-motocicletas">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="furtos-demais">Demais Furtos</label>
+                                        <input type="number" name="furtos-demais" value="0" class="form-control" id="furtos-demais">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3>Roubos</h3>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="roubos-automoveis">Automóveis</label>
+                                        <input type="number" name="roubos-automoveis" value="0" class="form-control" id="roubos-automoveis">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="roubos-caminhoes">Caminhões</label>
+                                        <input type="number" name="roubos-caminhoes" value="0" class="form-control" id="roubos-caminhoes">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="roubos-caminhonetas">Caminhonetas</label>
+                                        <input type="number" name="roubos-caminhonetas" value="0" class="form-control" id="roubos-caminhonetas">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="roubos-motocicletas">Motocicletas</label>
+                                        <input type="number" name="roubos-motocicletas" value="0" class="form-control" id="roubos-motocicletas">
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <label for="roubos-demais">Demais Roubos</label>
+                                        <input type="number" name="roubos-demais" value="0" class="form-control" id="roubos-demais">
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+                    <section class="cadastro-ocorrencias clearfix">
+                        <h2><img src="img/icon-police.jpg" alt=""> Atividades de Polícia Judiciária</h2>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <h3><label for="flagrantes-lavrados">Número de flagrantes lavrados</label></h3>
+                                    <input type="number" name="flagrantes-lavrados" value="0" class="form-control" id="flagrantes-lavrados">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Prisões</h3>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="prisoes-flagrante">Prisões em Flagrante</label>
+                                    <input type="number" name="prisoes-flagrante" value="0" class="form-control" id="prisoes-flagrante">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="prisoes-mandado">Prisões com mandado</label>
+                                    <input type="number" name="prisoes-mandado" value="0" class="form-control" id="prisoes-mandado">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Apreensões de Adolescentes</h3>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="adolescentes-flagrante">Apreensões de Adolescentes em Flagrante</label>
+                                    <input type="number" name="adolescentes-flagrante" value="0" class="form-control" id="adolescentes-flagrante">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="adolescentes-mandado">Apreensões de Adolescentes com mandado</label>
+                                    <input type="number" name="adolescentes-mandado" value="0" class="form-control" id="adolescentes-mandado">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Armas Apreendidas</h3>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="armas-fogo">Armas de fogo</label>
+                                    <input type="number" name="armas-fogo" value="0" class="form-control" id="armas-fogo">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="armas-brancas">Armas Brancas</label>
+                                    <input type="number" name="armas-brancas" value="0" class="form-control" id="armas-brancas">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <h3><label for="veiculos-recuperados">Número de veículos Recuperados</label></h3>
+                                    <input type="number" name="veiculos-recuperados" value="0" class="form-control" id="veiculos-recuperados">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Quantidade de Drogas Apreendidas</h3>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="cocaina">Cocaína</label>
+                                    <input type="number" name="cocaina" value="0" class="form-control" id="cocaina">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="crack">Crack</label>
+                                    <input type="number" name="crack" value="0" class="form-control" id="crack">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="maconha">Cocaína</label>
+                                    <input type="number" name="maconha" value="0" class="form-control" id="maconha">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <label for="outros">Outros</label>
+                                    <input type="number" name="outros" value="0" class="form-control" id="outros">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="col-xs-12">
+                        <button value="submit" class="btn btn-primary btn-lg">Enviar</button>
+                    </div>
+                </form>
+
+            </section>
+        </main>
+
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/plugins.js"></script>
+
+    </body>
+</html>
